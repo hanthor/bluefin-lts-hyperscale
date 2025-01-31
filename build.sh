@@ -13,7 +13,7 @@ set -ouex pipefail
 dnf install -y  centos-release-hyperscale centos-release-hyperscale-kernel
 dnf config-manager --set-enabled crb
 
-sudo dnf update --exclude=selinux*
+sudo dnf update -y --exclude=selinux*
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
